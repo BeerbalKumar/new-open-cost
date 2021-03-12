@@ -1,0 +1,40 @@
+._navBar {
+  background-color: #f3f3f3 !important;
+}
+.mr-auto {
+}
+.navabr_link {
+  color: #535353 !important;
+  // border: 1px solid black;
+  width: 120px;
+  margin-top: -10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  border-bottom: 1px solid #f3f3f3;
+  text-align: center;
+}
+.navabr_link:hover {
+  border-bottom: 1px solid #ca9277;
+  color: #ca9277 !important;
+}
+.navabr_link:focus {
+    border-bottom: 1px solid #ca9277;
+    color: #ca9277 !important;
+  }
+  .navbar-toggler {
+    color: black !important;
+    border-color: rgba(0,0,0,.1);
+}
+  @media only screen and (max-width: 600px) {
+    .navabr_link {
+        color: #535353 !important;
+        // border: 1px solid black;
+        width: 120px;
+        margin-top: -10px;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s;
+        border-bottom: 1px solid #f3f3f3;
+        text-align: left !important;
+      }
+  }
+  

@@ -1,0 +1,289 @@
+.how-it-works {
+  .highlight {
+    &-holder {
+      &-first {
+        margin-top: 18%;
+      }
+
+      &-second {
+        margin-top: 10%;
+      }
+    }
+  }
+
+  .video-wrapper {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 100%;
+
+    text-align: center;
+
+    .video-title {
+      width: 100%;
+      font-weight: 600;
+    }
+
+    .video-holder {
+      margin-left: 0;
+
+      .open-coast-video {
+        width: 650px;
+        height: 350px;
+
+        background: $light-blue-400;
+      }
+    }
+
+    .video-details {
+      margin-top: 30px;
+      margin-left: 0;
+      width: 100%;
+
+      p {
+        margin: 0 auto;
+        width: 780px;
+
+        font-size: 1.17em;
+        font-weight: 400;
+        line-height: 25px;
+        color: $black;
+      }
+    }
+  }
+
+  .tab-holder {
+    &-list {
+      padding: 0;
+
+      li {
+        width: 21%;
+      }
+    }
+  }
+
+  .pre-footer {
+    margin-top: 0;
+    background-color: $light-blue-400;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .how-it-works {
+    .highlight {
+      &-holder {
+        &-first {
+          margin-top: 15%;
+        }
+
+        &-second {
+          margin-top: 1%;
+        }
+      }
+    }
+
+    .video-wrapper {
+      margin-top: 0;
+    }
+
+    .tab-holder {
+      &-list {
+        padding: 0;
+        margin-top: 50px;
+        width: 100%;
+      }
+
+      .container-custom {
+        max-width: 1145px;
+      }
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .how-it-works {
+    .highlight {
+      &-holder {
+        &-first {
+          margin-top: 15%;
+          margin-left: 12px;
+        }
+
+        &-second {
+          margin-top: 1%;
+          width: 100%;
+
+          .image-highlight {
+            margin-right: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .video-wrapper {
+      margin-top: 0;
+
+      .video-title {
+        margin-bottom: 10px;
+      }
+
+      .video-holder {
+        width: 100%;
+
+        .open-coast-video {
+          width: 70%;
+          height: 300px;
+        }
+      }
+
+      .video-details {
+        margin-top: 30px;
+        margin-left: 0;
+
+        p {
+          width: 80%;
+          font-size: 22px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .tab-holder {
+      &-list {
+        padding: 0;
+
+        li {
+          width: 35%;
+        }
+      }
+
+      .container-custom {
+        max-width: 933px;
+      }
+
+      .alter-grid-holder {
+        .tab-steps {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .how-it-works {
+    .highlight {
+      &-holder {
+        &-first {
+          margin-top: 15%;
+        }
+
+        &-second {
+          margin-top: 10%;
+        }
+      }
+    }
+
+    .video-wrapper {
+      margin-top: 40px;
+
+      .video-title {
+        margin-bottom: 10px;
+      }
+
+      .video-holder {
+        width: 100%;
+
+        .open-coast-video {
+          width: 75%;
+          height: 280px;
+        }
+      }
+
+      .video-details {
+        margin-top: 30px;
+        margin-left: 0;
+
+        p {
+          width: 95%;
+
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .tab-holder {
+      &-list {
+        li {
+          width: 50%;
+        }
+      }
+
+      .container-custom {
+        max-width: 710px;
+      }
+
+      .alter-grid-holder {
+        .tab-steps {
+          margin-bottom: 10%;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .how-it-works {
+    .highlight {
+      &-holder {
+        &-first {
+          margin-top: 3%;
+          margin-left: 0;
+        }
+
+        &-second {
+          margin-top: 10%;
+        }
+      }
+    }
+
+    .video-wrapper {
+      margin-top: 45px;
+
+      .video-title {
+        margin-bottom: 30px;
+      }
+
+      .video-holder {
+        width: 100%;
+
+        .open-coast-video {
+          width: 95%;
+          height: 200px;
+        }
+      }
+
+      .video-details {
+        margin-top: 30px;
+        margin-left: 0;
+
+        p {
+          width: 97%;
+
+          font-size: 17px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .tab-holder {
+      .alter-grid-holder {
+        .tab-steps {
+          width: 95%;
+        }
+      }
+    }
+  }
+}

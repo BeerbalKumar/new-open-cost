@@ -1,0 +1,177 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Basic styles for links
+ */
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    // text-decoration: underline;
+  }
+}
+
+.btn,
+a {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+
+  @include on-event {
+    outline: 0;
+    @include boxshadow(none);
+  }
+}
+
+/**
+ * Basic styles for input fields
+ */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-focus-ring-color: none;
+  outline: none;
+
+  @include on-event {
+    @include boxshadow(none);
+  }
+}
+
+//styles for navbar-toggler
+.navbar-toggler {
+  padding: 10px 0;
+
+  border: 0;
+  border-radius: 0;
+
+  .icon-bar {
+    display: block;
+    height: 4px;
+    width: 29px;
+
+    background: #000;
+
+    @include transition(0.5s cubic-bezier(0.65, 0.05, 0.36, 1));
+
+    @include boxshadow(none);
+
+    &+.icon-bar {
+      margin-top: 4px;
+    }
+  }
+
+  &[aria-expanded="true"] {
+    .icon-bar {
+      &:first-child {
+        @include transform(rotate(225deg) translate(-6px, -5px));
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        @include transform(rotate(-225deg) translate(-6px, 6px));
+      }
+    }
+  }
+
+  @include on-event() {
+    outline: 0;
+  }
+}
+
+//remove all margins for default
+body * {
+  margin: 0;
+}
+
+body {
+
+  &.no-scroll {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.container-custom {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1382px;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .container-custom {
+    max-width: 1155px;
+  }
+}
+
+@include respond-to(lg) {
+  .container-custom {
+    max-width: 947px;
+  }
+}
+
+@include respond-to(md) {
+  .container-custom {
+    max-width: 738px;
+  }
+}
+
+@include respond-to(sm) {
+  .container-custom {
+    max-width: 529px;
+  }
+}
+
+@include respond-to(xs) {
+  .container-custom {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2999px) {
+  html {
+    zoom: 1.3;
+  }
+}
+
+@media screen and (min-width: 3000px) and (max-width: 4096px) {
+  html {
+    zoom: 1.85;
+  }
+}
+

@@ -1,0 +1,16 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+
+@include font-face($font-neutrif-pro, $base-url + 'fonts/', 'neutrif-pro-regular', 'neutrif-pro-regular', 400);
+@include font-face($font-neutrif-pro, $base-url + 'fonts/', 'neutrif-pro-medium', 'neutrif-pro-medium', 500);
+@include font-face($font-neutrif-pro, $base-url + 'fonts/', 'neutrif-pro-semibold', 'neutrif-pro-semibold', 600);
+@include font-face($font-neutrif-pro, $base-url + 'fonts/', 'neutrif-pro-bold', 'neutrif-pro-bold', 700);
+
+@include font-face($font-gotham, $base-url + 'fonts/', 'Gotham-Regular', 'Gotham-Regular', 400);
+@include font-face($font-gotham, $base-url + 'fonts/', 'Gotham-Medium', 'Gotham-Medium', 500);
+@include font-face($font-gotham, $base-url + 'fonts/', 'Gotham-Bold', 'Gotham-Bold', 700);

@@ -1,0 +1,156 @@
+.product {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    overflow-x: auto;
+
+    .swiper-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .swiper-slide {
+      width: calc(97.5% / 4);
+    }
+  }
+
+  &-item {
+    width: 24.7%;
+  }
+
+  &-link {
+    color: $dark-blue-100;
+  }
+
+  &-img {
+    max-width: 100%;
+  }
+
+  &-name,
+  &-price {
+    text-align: center;
+  }
+
+  &-name {
+    margin-top: 5px;
+
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &-price {
+    padding-top: 1px;
+
+    font-size: 14px;
+    color: $grey-200;
+
+    & .blurred-text {
+      color: transparent;
+      text-shadow: 0 0 4px rgba(0,0,0,.5);
+    }
+  }
+
+  &-btn {
+    text-align: center;
+    margin-top: 71px;
+
+    .btn-blue {
+      padding: 13px 40px;
+
+      font-size: 18px;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .product {
+
+    &-list {
+      .swiper-slide {
+        width: calc(100% / 3.5);
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+
+  .product {
+
+    &-list {
+      position: relative;
+
+      padding-top: 46px;
+      margin-left: 20px;
+
+      .swiper-slide {
+        width: calc(100% / 2);
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 1;
+
+          width: 100%;
+          height: 100%;
+
+          background-color: rgba(255,255,255,0.5);
+        }
+
+        .product-img {
+          max-width: 100%;
+        }
+
+        &-active {
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+
+    &-item {
+      padding-right: 29px;
+      width: 100%;
+
+      &:last-of-type {
+        padding-right: 20px;
+      }
+    }
+
+    &-img {
+      max-width: 237px;
+    }
+
+    &-name {
+      margin-top: 10px;
+    }
+
+    &-btn {
+      margin-top: 25px;
+
+      .btn-blue {
+        display: inline-block;
+        width: initial;
+        padding: 12px 20px;
+        height: 26px;
+
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .product {
+
+    &-list {
+      .swiper-slide {
+        width: 67%;
+      }
+    }
+  }
+}

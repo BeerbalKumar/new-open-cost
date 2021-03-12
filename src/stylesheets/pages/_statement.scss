@@ -1,0 +1,75 @@
+.statement-wrapper {
+  .container-custom {
+    .statement {
+      margin: 50px 0;
+      font-family: $font-gotham;
+
+      .hr-wrapper {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 25px;
+        margin-left: 25px;
+
+        font-weight: 400;
+      }
+
+      &-list {
+        margin-top: 25px;
+        list-style-type: upper-roman;
+      }
+
+      &-item {
+        padding-left: 20px;
+        margin: 10px;
+      }
+
+      &-ul-list {
+        margin-top: 25px;
+      }
+
+      &-ol-list {
+        margin-top: 25px;
+        list-style-type: upper-roman;
+      }
+
+      &-square-list {
+        list-style-type: square;
+      }
+
+      &-title {
+        font-weight: 800;
+      }
+
+      .link {
+        color: $blue-100;
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .statement-wrapper {
+    .container-custom {
+      .statement {
+
+        h2 {
+          margin-left: 5px;
+          font-size: 20px;
+        }
+
+        p {
+          margin-left: 5px;
+          font-size: 14px;
+        }
+
+        &-item {
+          padding: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

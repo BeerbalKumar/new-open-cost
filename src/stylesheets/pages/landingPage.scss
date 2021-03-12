@@ -1,0 +1,369 @@
+._header_sec {
+  background-color: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 90px;
+}
+._heading_txt {
+  text-align: center;
+  margin: auto;
+  font-size: 4.5vh;
+}
+._header_images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 200px;
+  position: relative;
+  bottom: -100px !important;
+}
+._headerImage1 {
+  width: 100%;
+  height: 250px;
+}
+._headerImage2 {
+  width: 100%;
+  height: 350px;
+}
+._headerImage3 {
+  width: 100%;
+  height: 450px;
+}
+._headerImage4 {
+  width: 100%;
+  height: 350px;
+}
+._headerImage5 {
+  width: 100%;
+  height: 250px;
+}
+.header_images-sec {
+  // border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 200px;
+}
+._retailers_sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+._brands_sec {
+  text-align: center;
+}
+.brands_img {
+  width: 70%;
+  margin: auto;
+  // height: 00px;
+}
+._as_see_in {
+  text-align: center;
+}
+._line_img {
+  width: 150px;
+}
+._contact_box_sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+._contact_boxes {
+  background-color: #ca9277;
+  padding: 20px 10px 20px 10px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+  height: 100px;
+}
+.contact_points_sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin-top: 10px;
+}
+._why_us_txt {
+  font-size: 40px;
+}
+._get_in_txt {
+  font-size: 40px;
+}
+._our_supplier_sec {
+  background-color: #ebe4db;
+  padding: 10px 2px 10px 2px;
+}
+._our_supplier_heading {
+  text-align: center;
+  font-size: 4.5vh;
+}
+._our_supplier_des {
+  text-align: center;
+  font-size: 30px;
+}
+._country_sec {
+  text-align: center;
+}
+._country_image {
+  width: 90%;
+}
+.did_we_mention_sec {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f3f3f3;
+}
+.did_we_mention_txt1 {
+  text-align: center;
+  font-size: 4.5vh;
+}
+.did_we_mention_txt2 {
+  margin: auto;
+  text-align: center;
+  font-size: 3vh;
+  margin-top: 10px;
+}
+.did_we_mention_txt3 {
+  color: #ca9277;
+  text-align: center;
+  font-size: 3vh;
+}
+._box_icon {
+  width: 50px;
+}
+.forbes_img {
+  width: 100%;
+}
+._thousands_txt {
+  color: #ca9277;
+}
+._retailers_txt {
+  font-size: 4.5vh;
+  text-align: center;
+}
+._brands_txt {
+  font-size: 3.5vh;
+}
+._as_see_txt {
+  font-size: 3.5vh;
+}
+._as_see_in_images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.retailer_sec {
+  background-color: #ebe4db;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 40px;
+}
+._retailer_image1 {
+  width: 100%;
+  height: 800px;
+}
+._retailer_txt {
+  font-size: 4.5vh;
+  width: 70%;
+  margin: auto;
+}
+._retailer_image2 {
+  width: 60%;
+  height: 500px;
+  margin-top: 50px;
+}
+._retailer_image3 {
+  width: 50%;
+  // height: 500px;
+  margin-top: 10px;
+  position: relative;
+  bottom: 50px;
+  left: -150px;
+}
+._retailer_des {
+  text-align: left;
+  font-size: 25px;
+  margin-top: 60px;
+}
+._retailer_des1 {
+  text-align: left;
+  font-size: 25px;
+}
+.contact_sec {
+  background-color: #f3f3f3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+._contact_input {
+  width: 100%;
+  padding: 15px 10px 15px 10px;
+  border: 1px solid gainsboro;
+  margin-top: 10px;
+}
+.submit_button {
+  border: 1px solid #ca9277;
+  color: white;
+  padding: 10px 5px 10px 5px;
+  background-color: #ca9277;
+  margin-top: 20px;
+}
+._label {
+  color: #535353;
+  text-align: left;
+}
+.contact_points_des {
+  margin-left: 5px;
+}
+.countries_sec {
+  margin-top: 100px;
+}
+._testimonial_heading {
+  text-align: center;
+  font-size: 4.5vh;
+  width: 40%;
+  margin: auto;
+}
+.help_txt1 {
+  text-align: center;
+  font-size: 4.5vh;
+}
+.help_txt2 {
+  text-align: center;
+  font-size: 3vh;
+}
+._have_any_question_sec {
+  background-color: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+._view_more_btn {
+  margin-top: 20px;
+  border: 1px solid grey;
+  width: 20%;
+  padding: 10px;
+  background-color: #f3f3f3;
+}
+._retailer_txt1{
+  font-size: 6vh;
+  width: 50%;
+  position: relative !important;
+  top: 120px;
+  z-index: 1;
+  margin-left: 10%;
+}
+.errorMessage{
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  ._headerImage1 {
+    width: 100%;
+    height: 100px;
+  }
+  ._headerImage2 {
+    width: 100%;
+    height: 160px;
+  }
+  ._headerImage3 {
+    width: 100%;
+    height: 200px;
+  }
+  ._headerImage4 {
+    width: 100%;
+    height: 160px;
+  }
+  ._headerImage5 {
+    width: 100%;
+    height: 100px;
+  }
+  ._header_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1px;
+  }
+  ._retailer_image2 {
+    width: 90%;
+    height: 300px;
+  }
+  ._retailer_image1 {
+    width: 100%;
+    height: 400px;
+  }
+  ._contact_input {
+    width: 100%;
+    padding: 15px 10px 15px 10px;
+    border: 1px solid gainsboro;
+    margin-top: 10px;
+  }
+  ._country_image {
+    width: 70%;
+    margin: 10px;
+  }
+  ._view_more_btn {
+    margin-top: 20px;
+    border: 1px solid grey;
+    width: 40%;
+    padding: 10px;
+    background-color: #f3f3f3;
+  }
+  ._retailer_image3 {
+    width: 50%;
+    margin-top: 10px;
+    position: relative;
+    bottom: 50px;
+    left: -5px;
+}
+._contact_boxes {
+  background-color: #ca9277;
+  padding: 20px 10px 20px 10px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  width: 30%;
+  margin: 10px;
+  height: 124px;
+}
+.countries_sec {
+  margin-top: 19px;
+}
+._retailer_txt1 {
+  font-size: 5vh;
+  width: 84%;
+  position: relative !important;
+  top: 25px;
+  z-index: 1;
+  margin-left: 10%;
+}
+._retailer_des {
+  text-align: left;
+  font-size: 21px;
+  margin-top: 60px;
+}
+._retailer_des1 {
+  text-align: left;
+  font-size: 21px;
+}
+._our_supplier_des {
+  text-align: center;
+  font-size: 21px;
+}
+._retailer_txt {
+  font-size: 3.5vh;
+  width: 100%;
+}
+._testimonial_heading {
+  text-align: center;
+  font-size: 4.5vh;
+  width: 80%;
+  margin: auto;
+}
+}

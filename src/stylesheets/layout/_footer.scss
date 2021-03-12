@@ -1,0 +1,374 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+  min-height: 408px;
+
+  background-color: $dark-blue-200;
+
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 83px 0 47px;
+  }
+
+  &-logo-wrapper {
+    padding-top: 6px;
+  }
+
+  &-location {
+    position: relative;
+
+    margin: 10px 0 0 15px;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+    color: $light-blue-100;
+    list-style-type: none;
+
+    &:before {
+      content: '\f3c5';
+      position: absolute;
+      top: 0;
+      left: -15px;
+
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 700;
+    }
+  }
+
+  &-link-wrapper {
+    display: flex;
+    width: 49.2%;
+  }
+
+  &-link-item {
+
+    &:nth-of-type(1) {
+      margin-right: 104px;
+    }
+
+    &:nth-of-type(2) {
+      margin-right: 131px;
+    }
+  }
+
+  &-link-title {
+    position: relative;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+
+    &:after {
+      content: '';
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 10px;
+
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &-link-list {
+    padding: 11px 0 0;
+
+    list-style-type: none;
+
+    li {
+      padding-bottom: 12px;
+    }
+  }
+
+  &-link {
+    font-size: 15px;
+    color: $light-blue-100;
+
+    @include respond-to(md-up) {
+
+      @include on-event {
+        color: $white;
+      }
+    }
+  }
+
+  .sign-up {
+
+    &-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: $white;
+      text-transform: uppercase;
+
+      margin-bottom: 16px;
+    }
+
+    &-wrapper {
+      display: flex;
+    }
+  }
+
+  .alert {
+    position: absolute;
+
+    width: 350px;
+
+    &.alert-error .alert-link, &.alert-success .alert-link {
+      font-size: 16px;
+    }
+  }
+
+  .form-input {
+    padding: 0 13px;
+    width: 212px;
+    height: 38px;
+
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .btn-blue {
+    padding: 10px 42px;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .copyright {
+
+    &-wrapper {
+      padding: 24px 0 35px;
+
+      border-top: 1px solid $light-blue-200;
+    }
+
+    &-text {
+      font-size: 16px;
+      color: $light-blue-100;
+      text-align: center;
+      word-spacing: -1px;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+  .footer {
+
+    &-link-item {
+      &:nth-of-type(1) {
+        margin-right: 60px;
+      }
+
+      &:nth-of-type(2) {
+        margin-right: 100px;
+      }
+    }
+
+    .alert {
+      position: absolute;
+
+      width: 350px;
+
+      &.alert-error .alert-link, &.alert-success .alert-link {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include respond-to(lg) {
+
+  .footer {
+
+    &-link-wrapper {
+      width: 50.2%;
+    }
+
+    &-link-item {
+
+      &:nth-of-type(1) {
+        margin-right: 37px;
+      }
+
+      &:nth-of-type(2) {
+        margin-right: 58px;
+      }
+    }
+
+    .form-input {
+      width: 140px;
+    }
+
+    .btn-blue {
+      padding: 10px 31px;
+    }
+
+    .alert {
+      position: absolute;
+
+      width: 290px;
+
+      &.alert-error .alert-link, &.alert-success .alert-link {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+
+  .footer {
+
+    &-wrapper {
+      padding: 70px 0 30px;
+    }
+
+    &-logo-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 230px;
+    }
+
+    &-location {
+      margin-top: 0;
+    }
+
+    &-link-wrapper {
+      justify-content: space-between;
+      order: 1;
+      padding-top: 40px;
+      width: 100%;
+    }
+
+    &-link-item {
+
+      &:nth-of-type(1) {
+        margin-right: 55px;
+      }
+    }
+
+    .alert {
+      position: absolute;
+
+      width: 350px;
+
+      &.alert-error .alert-link, &.alert-success .alert-link {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+
+  .footer {
+    min-height: 480px;
+
+    &-wrapper {
+      padding: 43px 17px 47px;
+    }
+
+    &-link-wrapper {
+      flex-direction: column;
+      // margin-top: 45px;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    &-link-item {
+      padding-bottom: 9px;
+
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        margin: 0;
+      }
+
+      &.active-dropdown {
+
+        .footer-link-title {
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+
+        .footer-link-list {
+          height: initial;
+
+          pointer-events: visible;
+          opacity: 1;
+
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+
+    &-link-title {
+      &:after {
+        content: '\f0d7';
+
+        left: 110px;
+      }
+    }
+
+    &-link-list {
+      height: 0;
+
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    .form-input {
+      width: 176px;
+    }
+
+    .copyright {
+
+      &-wrapper {
+        padding: 21px 0 26px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+
+      &-text-notif {
+        display: none;
+      }
+    }
+
+    .alert {
+      position: absolute;
+      width: 70%;
+
+      &.alert-error .alert-link, &.alert-success .alert-link {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:373px) {
+  .footer {
+
+    .form-input {
+      width: 157px;
+    }
+
+    .btn-blue {
+      padding: 10px 21px;
+    }
+  }
+}

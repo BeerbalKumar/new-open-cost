@@ -1,0 +1,69 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+%btn {
+  padding: 8px 20px;
+
+  font-size: 14.6px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  @include on-event {
+    color: $white;
+  }
+}
+
+.btn-blue {
+  @extend %btn;
+
+  background-color: $blue-100;
+  border: 1px solid $blue-100;
+  &.btn-inverted {
+    color: $blue-100;
+    background-color: $white;
+  }
+}
+
+.btn-green {
+  @extend %btn;
+
+  background-color: $green-300;
+  border: 1px solid $green-300;
+}
+
+@include respond-to(md-up) {
+  .btn-blue {
+    @include on-event {
+      color: $blue-100;
+
+      background-color: $white;
+    }
+    &.btn-inverted {
+      border-color: transparent;
+      box-shadow: 0 5px 8px -10px rgba(30, 45, 62, 0.21),
+        0 5px 15px -10px rgba(31, 44, 60, 0.1);
+      @include on-event {
+        color: $white;
+        border-color: transparent;
+        background-color: $blue-100;
+      }
+    }
+  }
+
+  .btn-green {
+    @include on-event {
+      color: $green-300;
+
+      background-color: transparent;
+    }
+  }
+}

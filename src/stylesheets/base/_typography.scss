@@ -1,0 +1,46 @@
+//main: ../main.scss
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $dark-blue-100;
+  font: normal 125% / 1.4 $font-neutrif-pro;
+}
+
+.list-title-text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.list-subtitle-text {
+  margin-top: 6px;
+
+  font-size: 14px;
+  color: $grey-200;
+}
+
+.hr-wrapper {
+  margin-top: 63px;
+  margin-bottom: 50px;
+
+  .hl {
+    border: 1px solid $light-blue-300;
+  }
+}
+
+@include respond-to(sm-down) {
+
+  .list-title-text,
+  .list-subtitle-text {
+    text-align: center;
+  }
+
+  .list-title-text {
+    font-size: 20px;
+  }
+
+  .list-subtitle-text {
+    margin-top: 8px;
+  }
+}

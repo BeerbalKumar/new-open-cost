@@ -1,0 +1,70 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+$font-opensans: 'Open Sans';
+$font-neutrif-pro: 'Neutrif Pro';
+$font-gotham: 'Gotham';
+
+/// @type List
+$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #E50050 !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #EDEDED !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #999 !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: #444 !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;
+
+$white: #fff;
+$black: #000;
+
+$blue-100: #2b7efc;
+$blue-200: #33629a;
+
+$dark-blue-100: #000922;
+$dark-blue-200: #0d1528;
+
+$light-blue-100: #6d7d98;
+$light-blue-200: #262f43;
+$light-blue-300: #eaeef7;
+$light-blue-400: #f5f6fa;
+$light-blue-500: #e1e7f3;
+$light-blue-600: #e8ecf7;
+
+$grey-100: #f2f3f2;
+$grey-200: #a5abb4;
+$grey-300: #9096a4;
+$grey-400: #828792;
+$grey-500: #c6cad5;
+$grey-600: #a3a8b5;
+
+$green-100: #f6f8f3;
+$green-200: #cedfab;
+$green-300: #99c04c;

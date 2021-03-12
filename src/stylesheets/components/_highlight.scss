@@ -1,0 +1,177 @@
+.highlight-wrapper {
+  height: 450px;
+
+
+  &.highlight-background {
+    background-color: $light-blue-400;
+  }
+
+  .highlight-holder {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+
+    &.inverted-highlight {
+      .highlight-holder-first {
+        order: 2;
+      }
+
+      .highlight-holder-second {
+        order: 1;
+      }
+    }
+
+    &-first {
+      padding: 10px;
+      margin-top: 180px;
+      margin-left: 130px;
+
+      h3 {
+        width: 440px;
+
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+
+      p {
+        margin-top: 10px;
+        width: 340px;
+
+        font-size: 14px;
+        color: $grey-200;
+      }
+    }
+
+
+    &-second {
+      margin-top: 50px;
+
+      .image-highlight {
+        margin-right: 50px;
+        width: 720px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .highlight-wrapper {
+    height: 400px;
+
+    .highlight-holder {
+      &-first {
+        margin-top: 150px;
+      }
+
+      &-second {
+        margin-top: 20px;
+
+        .image-highlight {
+          margin-top: 50px;
+          width: 555px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .highlight-wrapper {
+    height: 400px;
+
+    .highlight-holder {
+      &-first {
+        margin-top: 150px;
+      }
+
+      &-second {
+        margin-top: 20px;
+
+        .image-highlight {
+          margin-top: 50px;
+          width: 555px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .highlight-wrapper {
+    height: 320px;
+
+    .highlight-holder {
+      margin: 0 auto;
+
+
+      &-first {
+        margin-top: 100px;
+        margin-left: 0;
+
+        h3 {
+          width: 100%;
+
+          font-size: 18px;
+          line-height: 20px;
+        }
+
+        p {
+          width: 100%;
+
+          font-size: 14px;
+          line-height: 15px;
+        }
+      }
+
+      &-second {
+        .image-highlight {
+          margin: 0 auto;
+          width: 390px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .highlight-wrapper {
+    height: 350px;
+
+    .highlight-holder {
+      flex-wrap: wrap;
+      margin: 0 auto;
+
+
+      &-first {
+        order: 2;
+        margin-top: 0;
+        margin-left: 0;
+
+        text-align: center;
+
+        h3 {
+          width: 100%;
+
+          font-size: 18px;
+          line-height: 20px;
+        }
+
+        p {
+          width: 100%;
+          font-size: 12px;
+        }
+      }
+
+      &-second {
+        order: 1;
+
+        .image-highlight {
+          margin: 0 auto;
+          width: 320px;
+        }
+      }
+    }
+  }
+}

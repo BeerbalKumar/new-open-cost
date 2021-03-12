@@ -1,0 +1,758 @@
+.retailers-marketplaces {
+
+  .banner {
+
+    &-sm {
+      height: 537px;
+    }
+
+    &-hero {
+      flex-direction: column;
+
+      .btn-blue {
+        padding: 13px 16px;
+        margin-top: 32px;
+      }
+    }
+
+    &-title {
+      margin-top: 124px;
+      width: 690px;
+      max-width: 100%;
+
+      line-height: 61px;
+    }
+
+    &-subtitle {
+      width: 570px;
+      max-width: 100%;
+      margin-top: 18px;
+
+      line-height: 24px;
+    }
+  }
+
+  .product-counter {
+    padding-bottom: 24px;
+
+    &-wrapper {
+      min-height: 168px;
+    }
+  }
+
+  .perks-authenticity {
+
+    .perks {
+
+      &-content {
+        padding: 41px 0 45px;
+      }
+
+      &-list {
+        padding-top: 69px;
+      }
+
+      &-item {
+        padding-left: 97px;
+        margin-bottom: 36px;
+      }
+
+      &-text {
+        margin-top: 11px;
+        width: 450px;
+      }
+
+      &-img-holder {
+        flex: 0 0 51%;
+      }
+
+      &-list {
+        flex: 0 0 45%;
+      }
+    }
+  }
+
+  .free-up-dollars-wrapper {
+    padding-bottom: 64px;
+
+    .highlight-holder {
+      justify-content: space-between;
+      width: 91%;
+    }
+
+    .image-highlight {
+      width: 590px;
+      max-width: 100%;
+    }
+
+    .highlight-holder-first {
+      padding: 0;
+      margin-top: 223px;
+      margin-left: 0;
+
+      h3 {
+        width: 605px;
+        max-width: 100%;
+      }
+
+      p {
+        margin-top: 14px;
+        width: 471px;
+        max-width: 100%;
+        line-height: 1.6;
+
+      }
+    }
+
+    .highlight-holder-second {
+      margin-top: 79px;
+    }
+  }
+
+  .tab-enterprise {
+    padding: 62px 0 51px;
+
+    .tab-holder-list {
+      margin-top: 23px;
+
+      li {
+        padding-bottom: 8px;
+        width: 26%;
+
+        font-size: 19px;
+      }
+    }
+
+    .alter-grid-holder {
+      justify-content: space-between;
+      padding-top: 21px;
+      width: 89%;
+    }
+
+    .bullet-holder {
+      padding-left: 76px;
+      margin-top: 70px;
+
+      .bullet-item {
+        font-weight: 400;
+      }
+    }
+
+
+    .tab-content {
+      margin-top: 0;
+      margin-left: 0;
+      width: 571px;
+      height: 445px;
+    }
+  }
+
+  .tab-retailers {
+    margin-top: 35px;
+
+    .tab-holder-list {
+      margin-top: 23px;
+
+      li {
+        padding-bottom: 6px;
+      }
+    }
+
+    .alter-grid-holder {
+      justify-content: space-between;
+      padding-top: 57px;
+      width: 73%;
+
+      .tab-details {
+        padding: 51px 0 0;
+
+        font-size: 19px;
+        line-height: 1.6;
+
+        h4 {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .tab-content {
+      margin: 0;
+
+      &:first-of-type {
+        position: relative;
+
+        width: 426px;
+        height: 273px;
+
+        border: 8px solid $white;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+
+          width: 104%;
+          height: 106%;
+
+          background-color: $light-blue-600
+        }
+
+        &:before {
+          top: -20px;
+          left: -20px;
+        }
+
+        &:after {
+          right: -20px;
+          bottom: -20px;
+        }
+      }
+
+      &-text {
+        width: 489px;
+
+        font-size: 19px;
+      }
+    }
+  }
+
+  .pre-footer {
+    display: block;
+    padding: 57px 0 89px;
+    margin-top: 108px;
+
+    h2 {
+      margin: 0 auto 46px;
+      max-width: 900px;
+
+      line-height: 1.5;
+    }
+
+    .btn-blue {
+      padding: 13px 45px;
+
+      font-size: 17px;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .retailers-marketplaces {
+
+    .free-up-dollars-wrapper {
+
+      .highlight-holder-first {
+        width: 505px;
+      }
+
+      .image-highlight {
+        width: 460px;
+      }
+    }
+
+    .tab-enterprise {
+
+      .tab-holder-list {
+
+        li {
+          width: 32%;
+        }
+      }
+
+      .bullet-holder {
+        padding-left: 25px;
+      }
+    }
+
+    .tab-retailers {
+
+      .alter-grid-holder {
+        width: 85%;
+      }
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+
+  .retailers-marketplaces {
+
+    .perks-authenticity {
+
+      .perks {
+
+        &-item {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .tab-enterprise {
+
+      .bullet-holder {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@include respond-to(lg) {
+
+  .retailers-marketplaces {
+
+    .free-up-dollars-wrapper {
+      padding-bottom: 0;
+
+      .image-highlight {
+        width: 400px;
+      }
+
+      .highlight-holder-first {
+        margin-top: 175px;
+
+        h3 {
+          width: 305px;
+        }
+
+        p {
+          width: 420px;
+        }
+      }
+    }
+
+    .tab-enterprise {
+
+      .tab-holder-list {
+
+        li {
+          width: 42%;
+        }
+      }
+
+      .tab-content {
+        margin-top: 30px;
+        width: 450px;
+        height: 345px;
+
+        &:first-of-type {
+          width: 455px;
+        }
+      }
+
+      .bullet-holder {
+        margin-top: 21px;
+        width: 45%;
+      }
+    }
+
+    .tab-retailers {
+
+      .alter-grid-holder {
+        width: 92%;
+      }
+
+      .tab-content-text {
+        width: 350px;
+      }
+
+      .tab-holder-list {
+
+        li {
+          width: 32%;
+        }
+      }
+    }
+
+    .pre-footer {
+      padding: 50px 0 65px;
+
+      h2 {
+        font-size: 27px;
+      }
+
+      .btn-blue {
+        padding: 12px 30px;
+
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+
+  .retailers-marketplaces {
+
+    .banner {
+
+      &-sm  {
+        height: 525px;
+      }
+
+      &-title {
+        text-align: left;
+      }
+    }
+
+    .product-counter {
+      padding-bottom: 0;
+
+      &-heading {
+        padding-top: 50px;
+      }
+    }
+
+    .perks-authenticity {
+
+      .perks {
+
+        &-list {
+          order: 1;
+          padding-top: 40px;
+        }
+      }
+    }
+
+    .free-up-dollars-wrapper {
+      padding-bottom: 0;
+
+      .highlight-holder-first {
+        margin-top: 120px;
+
+        h3,
+        p {
+          width: 370px;
+        }
+      }
+
+      .image-highlight {
+        width: 270px;
+      }
+    }
+
+    .tab-enterprise {
+
+      .alter-grid-holder {
+        padding-top: 30px;
+      }
+
+      .tab-holder-list {
+
+        li {
+          width: 50%;
+        }
+      }
+
+      .tab-content {
+        width: 390px;
+        height: 300px;
+      }
+
+      .bullet-holder {
+        margin-top: 35px;
+      }
+    }
+
+    .tab-retailers {
+
+      .tab-holder-list {
+
+        li {
+          width: 50%;
+        }
+      }
+    }
+
+    .pre-footer {
+      padding: 57px 0 70px;
+      margin-top: 50px;
+
+      h2 {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@include respond-to(md-down) {
+
+  .retailers-marketplaces {
+
+    .tab-enterprise {
+
+      .bullet-holder {
+        order: 2;
+        width: 100%;
+      }
+
+      .tab-content {
+        margin: 0 auto;
+      }
+    }
+
+    .tab-retailers {
+
+      .tab-content {
+
+        margin: 0 auto;
+      }
+
+      .tab-details {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .retailers-marketplaces {
+
+    .banner {
+
+      &-sm {
+        height: 492px;
+      }
+
+      &-hero {
+        flex-direction: initial;
+        justify-content: center;
+      }
+
+      &-title {
+        margin-top: 103px;
+
+        font-size: 32px;
+        line-height: 1.4;
+      }
+
+      &-subtitle {
+        padding: 0 30px;
+        margin-top: 9px;
+        width: 100%;
+
+        text-align: center;
+      }
+
+      .btn-blue {
+        padding: 14px 17px;
+        margin-top: 28px;
+        width: 169px;
+        font-size: 16px;
+      }
+    }
+
+    .product-counter {
+      padding-bottom: 21px;
+
+      &-heading {
+        padding: 43px 0 0;
+        width: 92%;
+
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+      }
+
+      &-wrapper {
+        padding: 0;
+        min-height: 120px;
+      }
+
+      // &-content {
+
+      //   &:first-of-type {
+      //     padding: 0 52px 7px 0;
+      //   }
+
+      //   &:last-of-type {
+      //     padding: 0 26px 3px;
+      //   }
+      // }
+    }
+
+    .perks-authenticity {
+
+      .perks {
+
+        &-content {
+          padding: 49px 0 64px;
+        }
+
+        &-img-holder {
+          order: 0;
+        }
+
+        &-img {
+          width: 100%;
+        }
+
+        &-list {
+          padding: 13px 17px 0;
+        }
+
+        &-item {
+          margin-bottom: 22px;
+        }
+      }
+    }
+
+    .free-up-dollars-wrapper {
+      padding-bottom: 28px;
+
+      .highlight-wrapper {
+        height: auto;
+      }
+
+      .highlight-holder {
+        justify-content: center;
+      }
+
+      .highlight-holder-first {
+        margin-top: 57px;
+
+        h3,
+        p {
+          width: 100%;
+        }
+
+        h3 {
+          margin: 0 auto;
+          width: 85%;
+
+          font-size: 21px;
+          line-height: 1.1;
+        }
+
+        p {
+          margin-top: 15px;
+
+          line-height: 1.9;
+        }
+      }
+
+      .highlight-holder-second {
+        margin-top: 85px;
+      }
+
+      .image-highlight {
+        width: 100%;
+      }
+    }
+
+    .tab-enterprise {
+      padding: 69px 0 51px;
+
+      .alter-grid-holder {
+        padding-top: 42px;
+        margin: 0;
+        width: 100%;
+      }
+
+      .tab-holder-title {
+        margin-bottom: 11px;
+      }
+
+      .tab-holder-dropdown {
+        padding: 8px;
+        width: 95%;
+      }
+
+      .tab-content {
+        width: 358px;
+        max-width: 100%;
+        height: 280px;
+      }
+
+      .bullet-holder {
+        margin: 18px auto 0;
+        max-width: 82%;
+
+        .bullet-item {
+          font-size: 17px;
+        }
+      }
+
+      .select-wrapper {
+
+        &:after {
+          top: 14px;
+          right: 7px;
+        }
+      }
+    }
+
+    .tab-retailers {
+
+      margin-top: 65px;
+
+      .alter-grid-holder {
+        padding-top: 52px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .tab-holder-title {
+        font-size: 20px;
+      }
+
+      .tab-holder-dropdown {
+        padding: 10px 10px 4px;
+        width: 90%;
+
+        font-size: 17px;
+      }
+
+      .select-wrapper {
+        margin: 9px auto 0;
+      }
+
+      .tab-content {
+
+        &:first-of-type {
+          max-width: 85%;
+          height: 203px;
+
+          &:before {
+            top: -17px;
+            left: -15px;
+          }
+
+          &:after {
+            right: -16px;
+            bottom: -15px;
+          }
+        }
+
+        .tab-details {
+          padding: 90px 10px 0;
+
+          line-height: 1.5;
+
+          h4 {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    .pre-footer {
+      padding: 40px 0 75px;
+      margin-top: 82px;
+
+      h2 {
+        margin: 0 auto 56px;
+        max-width: 95%;
+
+        font-size: 23px;
+        line-height: 1.4;
+      }
+
+      .btn-blue {
+        padding: 13px 36px;
+
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 50%;
+
+  .video-holder {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 100px;
+
+    .btn-play {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      z-index: 2;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .open-coast-video {
+      z-index: 1;
+
+      width: 500px;
+      height: 280px;
+    }
+  }
+
+  .video-details {
+    margin-top: 70px;
+    margin-left: 35px;
+
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      margin-top: 10px;
+      width: 462px;
+
+      font-size: 14px;
+      letter-spacing: .5px;
+      line-height: 22px;
+      color: $grey-200;
+    }
+
+    .btn-blue {
+      margin-top: 22px;
+      width: 190px;
+      height: 50px;
+
+      font-size: 20px;
+      font-weight: 100;
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .video-wrapper {
+    padding-top: 30px;
+
+    .video-holder {
+      .open-coast-video {
+        width: 480px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .video-wrapper {
+    padding-top: 30px;
+
+    .video-holder {
+      margin: 0;
+
+      .btn-play {
+        top: 35%;
+        left: 43%;
+
+        width: 50px;
+      }
+
+      .open-coast-video {
+        width: 350px;
+        height: auto;
+      }
+    }
+
+    .video-details {
+      margin-top: 10px;
+      margin-left: 40px;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        width: 300px;
+
+        font-size: 14px;
+        line-height: 15px;
+      }
+
+      .btn-blue {
+        width: 180px;
+        height: 40px;
+
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .video-wrapper {
+    flex-wrap: wrap;
+    padding-top: 30px;
+
+    .video-holder {
+      margin: 0;
+
+      .btn-play {
+        top: 30%;
+        left: 43%;
+
+        width: 50px;
+      }
+
+      .open-coast-video {
+        width: 300px;
+        height: auto;
+      }
+    }
+
+    .video-details {
+      margin-top: 30px;
+      margin-left: 0;
+
+      text-align: center;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        width: 300px;
+
+        font-size: 12px;
+        line-height: 15px;
+      }
+
+      .btn-blue {
+        width: 180px;
+        height: 40px;
+
+        font-size: 18px;
+      }
+    }
+  }
+}

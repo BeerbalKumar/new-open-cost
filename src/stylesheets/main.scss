@@ -1,0 +1,34 @@
+﻿@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import "utils/variables", "utils/functions", "utils/mixins";
+
+// 2. Vendors
+@import "vendors/normalize", "vendors/font-awesome",
+  "vendors/font-awesome-solid", "vendors/font-awesome-regular",
+  "vendors/font-awesome-brands";
+
+// 3. Base stuff
+@import "base/base", "base/fonts", "base/typography", "base/helpers";
+
+// 4. Layout-related sections
+@import "layout/header", "layout/footer";
+
+// 5. Components
+@import "components/buttons", "components/links", "components/inputs",
+  "components/hero-banner", "components/highlight", "components/video",
+  "components/pre-footer", "components/tabs", "components/product-list",
+  "components/product-counter", "components/info", "components/testimonial",
+  "components/feature", "components/perks", "components/accordion-tabs",
+  "components/form", "components/favorite-category", "components/post",
+  "components/alert";
+
+// 6. Page-specific styles
+@import "pages/home", "pages/how-it-works", "pages/integrations",
+  "pages/sustainability", "pages/brands-suppliers",
+  "pages/retailers-marketplaces", "pages/support", "pages/statement",
+  "pages/blogs", "pages/blog";
+
+// 7. Themes
+@import "themes/default";
+

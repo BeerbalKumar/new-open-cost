@@ -1,0 +1,177 @@
+.notfound-wrapper {
+  height: 450px;
+
+
+  &.notfound-background {
+    background-color: $light-blue-400;
+  }
+
+  .notfound-holder {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+
+    &.inverted-notfound {
+      .notfound-holder-first {
+        order: 2;
+      }
+
+      .notfound-holder-second {
+        order: 1;
+      }
+    }
+
+    &-first {
+      padding: 10px;
+      margin-top: 180px;
+      margin-left: 130px;
+
+      h3 {
+        width: 440px;
+
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+
+      p {
+        margin-top: 10px;
+        width: 340px;
+
+        font-size: 14px;
+        color: $grey-200;
+      }
+    }
+
+
+    &-second {
+      margin-top: 50px;
+
+      .image-notfound {
+        margin-right: 50px;
+        width: 720px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .notfound-wrapper {
+    height: 400px;
+
+    .notfound-holder {
+      &-first {
+        margin-top: 150px;
+      }
+
+      &-second {
+        margin-top: 20px;
+
+        .image-notfound {
+          margin-top: 50px;
+          width: 555px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .notfound-wrapper {
+    height: 400px;
+
+    .notfound-holder {
+      &-first {
+        margin-top: 150px;
+      }
+
+      &-second {
+        margin-top: 20px;
+
+        .image-notfound {
+          margin-top: 50px;
+          width: 555px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .notfound-wrapper {
+    height: 320px;
+
+    .notfound-holder {
+      margin: 0 auto;
+
+
+      &-first {
+        margin-top: 100px;
+        margin-left: 0;
+
+        h3 {
+          width: 100%;
+
+          font-size: 18px;
+          line-height: 20px;
+        }
+
+        p {
+          width: 100%;
+
+          font-size: 14px;
+          line-height: 15px;
+        }
+      }
+
+      &-second {
+        .image-notfound {
+          margin: 0 auto;
+          width: 390px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .notfound-wrapper {
+    height: 350px;
+
+    .notfound-holder {
+      flex-wrap: wrap;
+      margin: 0 auto;
+
+
+      &-first {
+        order: 2;
+        margin-top: 0;
+        margin-left: 0;
+
+        text-align: center;
+
+        h3 {
+          width: 100%;
+
+          font-size: 18px;
+          line-height: 20px;
+        }
+
+        p {
+          width: 100%;
+          font-size: 12px;
+        }
+      }
+
+      &-second {
+        order: 1;
+
+        .image-notfound {
+          margin: 0 auto;
+          width: 320px;
+        }
+      }
+    }
+  }
+}
